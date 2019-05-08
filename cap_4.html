@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Aspectos Metodológicos</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Mapa Digital de Unidades Económicas <br> que Generan Sustancias Contaminantes</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Introducción</a>
+</li>
+<li>
+  <a href="cap_2.html">Objetivos y Antecedentes</a>
+</li>
+<li>
+  <a href="cap_3.html">Marco Conceptual</a>
+</li>
+<li>
+  <a href="cap_4.html">Aspectos Metodológicos</a>
+</li>
+<li>
+  <a href="cap_5.html">Mapa Digital</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Aspectos Metodológicos</h1>
+
+</div>
+
+
+<div class="text-justify">
+<p><br/></p>
+<h1 id="estrategia-de-recoleccion-de-la-informacion.">Estrategia de Recolección de la Información.</h1>
+<hr />
+<h2 id="insumos.">Insumos.</h2>
+<p>Información utilizada para el desarrollo del proyecto:</p>
+<p><strong><em>1. Registro de Emisiones y Transferencia de Contaminantes (RETC).</em></strong></p>
+<p>Tabla en formato Excel de las unidades económicas que reportan el uso y desecho de sustancias peligrosas o susceptibles de convertirse en peligrosas, para los años 2004 a 2016. Contiene la información de 3,529 registros.</p>
+<p>Tabla de Emisiones y transferencias de los contaminantes (15,995 registros). Contiene los contaminantes que arrojan las UE al medio ambiente, su emisión, entre otros. Esta tabla se construye a partir de las emisiones de las unidades económicas, por lo que cada registro corresponde a una emisión y existen registros que se repiten tantas veces como sustancias se reportan.</p>
+<p>Se cuenta con una serie estadística proporcionada por este instrumento, que data del año 2004 y llega hasta el año 2016. La información que ofrece el RETC, se publica anualmente, por lo que cada archivo descargado del sitio del informante contiene los datos de las empresas que declararon manejo de residuos peligrosos para ese año.</p>
+<p>Los archivos obtenidos del sitio oficial en el que los establecimientos reportan anualmente los desechos que emiten al suelo, agua o aire, datan del año 2004 en que, por primera vez, se logra que haya voluntariamente una declaratoria por algunas unidades económicas.</p>
+<p>Los datos que contienen los registros de emisiones, constan de dos apartados: el primero es un listado de las unidades económicas, sector y rama de actividad, su domicilio geográfico y las coordenadas donde aparentemente debe ubicarse el negocio (Figura 2).</p>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/RETC_2013.png" alt="Estructura de datos del RETC" width="80%" style="display:block; margin:auto;" />
+<p class="caption">
+Estructura de datos del RETC
+</p>
+</div>
+<p><br/></p>
+<p><strong><em>2. Directorio Estadístico Nacional de Unidades Económicas (DENUE).</em></strong></p>
+<p>Ofrece los datos de identificación, ubicación, actividad económica y tamaño de 5 millones 78 mil 737 unidades económicas activas en el territorio nacional; actualizados, fundamentalmente, en el segmento de los establecimientos grandes, cuyas características se describen en el <a href="http://www3.inegi.org.mx/contenidos/temas/economia/empresas/directorio/metodologias/DENUE_metodologia.pdf" target="_blank">documento metodológico</a> de dicho proyecto. Éste instrumento es utilizado en este proyecto en tanto que nos ofrece las coordenadas geográficas para confrontar y validar las del RETC.</p>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/DENUE.png" alt="Vista de datos del DENUE" width="100%" style="display:block; margin:auto;" />
+<p class="caption">
+Vista de datos del DENUE
+</p>
+</div>
+<p><br/></p>
+<h2 id="recoleccion-de-la-informacion">Recolección de la Información</h2>
+<p>Con los insumos comentados, se integró una base de datos actualizada hasta el año 2017 a efecto de hacer pruebas que mostraran la pertinencia de la información.</p>
+<p>Dicha base de datos contiene las unidades económicas que reportaron algún material contaminante. Al interior se organiza por tipo de sustancia y se validan las coordenadas geográficas contra el DENUE. El resultado es un producto que se puede exportar a un SIG para darle una ubicación espacial.</p>
+<p>Al corte, el ejercicio está hecho con una base de datos al año 2017, aunque cada año se genera nueva información por parte del RETC lo que en teoría permitiría actualizar cada año la capa geográfica con sus atributos correspondientes.</p>
+<h2 id="validacion">Validación</h2>
+<p>Esta etapa representa la parte más complicada del procesamiento, ya que en ella se verifica que la ubicación geográfica de las unidades económicas sea la correcta. Este paso es fundamental para la calidad del producto, ya que el mapa debe garantizar que cada punto que se localice en el mismo esté debidamente georreferenciado, en tanto que es indispensable delimitar con exactitud la zonas o puntos que representen un riesgo para personas, infraestructura y medio ambiente.</p>
+<p>Se definen tres procesos de validación para la ubicación geográfica de las unidades:</p>
+<ol style="list-style-type: decimal">
+<li><p>Primero, se contrastan latitud y longitud con los valores de estas medidas que delimitan a la República Mexicana, a fin de evitar errores obvios de ubicaciones en otras partes del mundo. En este paso se verifica, por ejemplo, que los valores de latitud y longitud no se encuentren intercambiados entre sí.</p></li>
+<li><p>Una segunda validación, verifica que los datos de latitud y longitud coincidan con los de las unidades económicas georreferenciadas en el DENUE. Si ambas coordenas geográficas coinciden, se concluye el proceso de validación.</p></li>
+<li><p>En el caso de que las coordenadas del RETC y del DENUE para la unidad económica no coincidan, o bien la empresa no pudo ser localizada en la base de datos del DENUE, se procede a verificar manualmente la ubicación en Google Earth o Google Maps, corrigiendo, si es necesario las coordenadas.</p></li>
+</ol>
+<h2 id="requerimientos-informaticos-para-el-tratamiento-de-datos">Requerimientos Informáticos para el Tratamiento de Datos</h2>
+<p>Es necesario el uso de algún software para procesamiento de Sistemas de Información Geográfica (SIG), ya que se requiere generar un mapa con la idea de incluirlo posteriormente en la plataforma del <em>Mapa Digital de México</em>. Específicamente se empleó en este caso el programa <a href="https://www.qgis.org/es/site/" target="_blank"><em>QGIS</em></a>, un sistema de código abierto, para el procesamiento del mapa.</p>
+<h2 id="descripcion-del-procesamiento-final-de-los-datos">Descripción del Procesamiento Final de los Datos</h2>
+<p>Una vez validada la ubicación geográfica, se usan las coordenadas geográficas para crear la capa de puntos que representan las empresas con riesgo por manejo de sustancias peligrosas. Adicionalmente, puede crearse un <em>buffer</em> de 100 metros, por ejemplo, para delimitar las zonas aledañas susceptibles de mayor riesgo. En un paso posterior del proyecto, se podrían diferenciar los tipos de sustancias por grado de peligrosidad para el ambiente o las personas, marcando en el mapa con un buffer distinto a la unidad económica, dependiendo de la sustancia de mayor peligrosidad que utilice en sus procesos productivos.</p>
+<h2 id="integracion-de-la-base-de-datos-y-productos-finales">Integración de la Base De Datos y Producto(s) Final(es)</h2>
+<p>Se debe integrar una base de datos que contenga los insumos, los productos finales (mapa y tablas de datos), así como los subproductos o productos intermedios derivados del procesamiento, en un sistema jerarquizado de carpetas que permitan la identificación de manera rápida de cada elemento. Dicha base de datos debe también incluir una carpeta con los archivos de metadatos del proceso y de cada producto generado, así como uno o más archivos que describan paso a paso el procedimiento que se siguió para obtener los resultados. Dicha descripción de los procesos deberá, de ser posible, permitir la reproducibilidad de los pasos seguidos, para cualquier usuario de la información.</p>
+<p>La base de datos se debe almacenar en un servidor del Instituto, para su resguardo y ser accesible para su consulta.</p>
+<h2 id="difusion">Difusión</h2>
+<p>Se espera que el mapa pueda ser incluido en alguna plataforma adecuada de acuerdo con la temática, por ejemplo, el <a href="http://geoweb2.inegi.org.mx/sicade/inicio.jsp#" target="_blank"><strong>Sitio Colaborativo para la Atención a Desastres</strong></a> del INEGI, o bien, dentro de alguno de los apartados de estadísticas ambientales en el sitio web del Instituto. La publicación podría hacerse como parte de algún mapa ya existente (como una capa de puntos que representen a los establecimientos con riesgos ambientales por manejo de sustancias peligrosas), o como mapa independiente.</p>
+<p>Los productos a difundir comprenden:</p>
+<ol style="list-style-type: decimal">
+<li><p>Tablas. El proyecto de mapa ambiental cuenta con tablas o archivos tabulares en formato Excel, con información de las unidades económicas que declararon en el RETC emisiones al medio ambiente, por tipo de material o residuo peligroso.</p></li>
+<li><p>Mapa. El proyecto, cuenta también con un mapa o capa geográfica en el que se plasman a nivel puntual, las empresas que fueron registradas en el RETC. Los puntos que representan a esas unidades económicas, tienen adicionadas, tablas de atributos con los datos de las tablas que contienen datos como nombre, domicilio, sector económico; residuos peligrosos que maneja y emite, así como las cantidades desechadas.</p></li>
+</ol>
+<p><strong>Perfil del usuario.</strong> El producto (mapa ambiental) está dirigido a todo tipo de usuario que sepa manejar un visualizador geográfico para nivel básico, así como para aquellos que sepan usar software de SIG’s para elaborar sus propios mapas a partir de la base de datos que se proporcione.</p>
+<h2 id="glosario">Glosario</h2>
+<p><strong>Bioacumulación.</strong> Proceso por el cual la cantidad de una sustancia en un organismo o parte de él aumenta proporcionalmente con el tiempo de exposición.</p>
+<p><strong>Carcinogenicidad.</strong> Capacidad de una sustancia química para incrementar la incidencia de cáncer.</p>
+<p><strong>Coeficiente de partición n-octanol/agua (Kow).</strong> Es la medida de la capacidad de una sustancia para distribuirse entre dos disolventes inmiscibles entre sí, el agua y el n-octanol, cuando se alcanza el equilibrio y se toma como una medida de la afinidad de una sustancia para fijarse en las grasas o lípidos.</p>
+<p><strong>Concentración.</strong> Cantidad de una sustancia química presente en el medio (aire, agua o suelo) expresada en unidades de masa de la sustancia por unidad de masa o volumen del medio.</p>
+<p><strong>Concentración efectiva media (CE50).</strong> Concentración en la que una sustancia química causa efectos adversos no letales en el cincuenta por ciento de los organismos de prueba expuestos.</p>
+<p><strong>Concentración letal media (CL50).</strong> Concentración de una sustancia química que provoca la muerte del cincuenta por ciento de los organismos de prueba expuestos a ella.</p>
+<p><strong>Concentración sin efecto adverso observable (NOAEC).</strong> Concentración máxima de una sustancia química que los organismos de prueba pueden tolerar durante un período específico sin mostrar efectos adversos.</p>
+<p><strong>Constituyente tóxico.</strong> Cualquier sustancia química contenida en un residuo y que hace que éste sea peligroso por su toxicidad, ya sea ambiental, aguda o crónica.</p>
+<p><strong>CRETIB.</strong> El acrónimo de clasificación de las características a identificar en los residuos peligrosos y que significa: corrosivo, reactivo, explosivo, tóxico ambiental, inflamable y biológico-infeccioso.</p>
+<p><strong>CRIT.</strong> El acrónimo de clasificación de las características a identificar en los residuos peligrosos y que significa: corrosivo, reactivo, inflamable y tóxico ambiental.</p>
+<p><strong>Dosis letal media (DL50).</strong> Cantidad de una sustancia química que se administra y que produce la muerte del cincuenta por ciento de los organismos de prueba.</p>
+<p><strong>Efecto adverso.</strong> Alteración producida por la exposición a sustancias químicas, que causan daño a los ecosistemas, a las personas o a otros seres vivos.</p>
+<p><strong>Extracto PECT.</strong> El lixiviado a partir del cual se determinan los constituyentes tóxicos del residuo y su concentración con la finalidad de identificar si éste es peligroso por su toxicidad al ambiente.</p>
+<p><strong>Factor de bioconcentración (BCF).</strong> Proporción de la concentración de una sustancia en los tejidos de un organismo con respecto a la concentración de la misma en el medio circundante, cuando se considera únicamente una exposición a través del agua.</p>
+<p><strong>Fuente específica.</strong> Las actividades que generan residuos peligrosos y que están definidas por giro o proceso industrial.</p>
+<p><strong>Fuente no específica.</strong> Las actividades que generan residuos peligrosos y que por llevarse a cabo en diferentes giros o procesos se clasifican de manera general.</p>
+<p><strong>Lixiviado.</strong> Líquido resultante del paso lento de un fluido a través de un sólido poroso. El lixiviado generalmente arrastra gran cantidad de los compuestos presentes en el sólido que atraviesa.</p>
+<p><strong>Mutagenicidad.</strong> Capacidad de una sustancia química para inducir un cambio permanente y heredable en la cantidad o estructura del material genético de una célula.</p>
+<p><strong>Nivel más bajo de efecto adverso observable (LOAEL).</strong> Concentración o dosis más baja de una sustancia química que produce un incremento significativo en la frecuencia o la severidad de los efectos adversos observados en los organismos de prueba expuestos a ella y en comparación con los organismos no expuestos.</p>
+<p><strong>Nivel sin efecto adverso observable (NOAEL).</strong> Dosis máxima de una sustancia química que los organismos de prueba pueden tolerar durante un período específico sin mostrar efectos adversos.</p>
+<p><strong>Número CAS.</strong> Identificador numérico único que el Servicio de Información de Sustancias Químicas (Chemical Abstracts Service), asigna a una sustancia.</p>
+<p><strong>PECT.</strong> Acrónimo de <em>Procedimiento de Extracción de Constituyentes Tóxicos</em>.</p>
+<p><strong>Persistencia ambiental.</strong> Capacidad de una sustancia química para permanecer en el ambiente durante un periodo de tiempo prolongado después de su liberación, manteniendo sus características de toxicidad o bioacumulación.</p>
+<p><strong>Residuos peligrosos resultado del desecho de productos fuera de especificaciones o caducos.</strong> Sustancias químicas que han perdido, carecen o presentan variación en las características necesarias para ser utilizados, transformados o comercializados respecto a los estándares de diseño o producción originales.</p>
+<p><strong>Teratogenicidad.</strong> Capacidad de una sustancia química para inducir malformaciones en el desarrollo embrionario de los organismos.</p>
+<p><strong>Toxicidad.</strong> Capacidad intrínseca de una sustancia química para causar daño a los seres vivos, desde el organismo individual hasta el ecosistema.</p>
+<p><strong>Toxicidad aguda.</strong> El grado en el cual una sustancia o mezcla de sustancias puede provocar, en un corto periodo de tiempo o en una sola exposición, daños o la muerte de un organismo.</p>
+<p><strong>Toxicidad ambiental.</strong> La característica de una sustancia o mezcla de sustancias que ocasiona un desequilibrio ecológico.</p>
+<p><strong>Toxicidad crónica.</strong> Es la propiedad de una sustancia o mezcla de sustancias de causar efectos dañinos a largo plazo en los organismos, generalmente a partir de exposiciones continuas o repetidas y que son capaces de producir efectos cancerígenos, teratogénicos o mutagénicos.</p>
+<p><strong>Toxicidad subcrónica.</strong> Capacidad de una sustancia química para causar daño o la muerte a los seres vivos después de exposiciones repetidas a ella en un periodo mayor a 96 horas, pero menor al diez por ciento del tiempo de vida de la especie de prueba.</p>
+<p><strong>Vida media.</strong> Tiempo requerido, para que la mitad de la concentración de una sustancia liberada a un medio se descomponga.</p>
+<h2 id="bibliografia">Bibliografía</h2>
+<p><a href="http://www.cec.org/sites/default/files/documents/sesiones_del_consejo/2053_SR02-06_es.pdf" target="_blank">Acta de Sesión 02-06 del Consejo de la Comisión para la Cooperación Ambiental de América del Norte, (2002).</a></p>
+<p><a href="http://www.diputados.gob.mx/LeyesBiblio/ref/lgeepa.htm" target="_blank">Ley General Del Equilibrio Ecológico y la Protección al Ambiente, DOF-28-01-1988. (1988).</a></p>
+<p><a href="http://dof.gob.mx/nota_detalle.php?codigo=4912592&amp;fecha=23/06/2006" target="_blank">Norma Oficial Mexicana, NOM-052-SEMARNAT-2005. <em>Que establece las características, el procedimiento de identificación, clasificación, y los listados de los residuos peligrosos</em>, (2005).</a></p>
+<p><a href="http://dof.gob.mx/nota_detalle.php?codigo=5330750&amp;fecha=24/01/2014&amp;print=true" target="_blank">Norma Oficial Mexicana, NOM-165-SEMARNAT-2013. <em>Que establece la lista de sustancias sujetas a reporte para el registro de emisiones y transferencia de contaminantes</em>, (2013).</a></p>
+<p><a href="https://www3.epa.gov/ttncatc1/dir1/areainv5.pdf" target="_blank">Radian International LLC. <em>Manuales del Programa de Inventarios de Emisiones de México</em>, (1997).</a></p>
+<p><a href="https://apps1.semarnat.gob.mx:445/retc/retc/index.php" target="_blank">SEMARNAT. Registro de Emisiones y Transferencia de Contaminantes, RETC. Página Web con serie estadística 2004-2016</a></p>
+<p><a href="https://lagf.org/2016/presentation/how-reality-capture-is-reshaping-the-digital-future.pdf" target="_blank">Stuart Woods. (Leica Geosystems AG. Geospatial Division). <em>How Reality Capture is Reshaping the Digital Future</em>, (2016).</a></p>
+<h1 id="anexos">Anexos</h1>
+<h2 id="anexo-1.-procedimiento-para-determinar-si-un-residuo-es-peligroso">Anexo 1. Procedimiento para determinar si un residuo es peligroso</h2>
+<ol style="list-style-type: decimal">
+<li><p>Un residuo es peligroso si se encuentra en alguno de los siguientes listados de la <a href="http://dof.gob.mx/nota_detalle.php?codigo=4912592&amp;fecha=23/06/2006" target="_blank">Norma Oficial Mexicana NOM-052-SEMARNAT-2005</a>:<br />
+• Listado 1: Clasificación de residuos peligrosos por fuente específica.<br />
+• Listado 2: Clasificación de residuos peligrosos por fuente no específica.<br />
+• Listado 3: Clasificación de residuos peligrosos resultado del desecho de productos químicos fuera de especificaciones o caducos (Tóxicos Agudos).<br />
+• Listado 4: Clasificación de residuos peligrosos resultado del desecho de productos químicos fuera de especificaciones o caducos (Tóxicos Crónicos).<br />
+• Listado 5: Clasificación por tipo de residuos, sujetos a Condiciones Particulares de Manejo.</p>
+<p>1.1 Las toxicidades aguda y crónica referidas en los Listados 1, 2, 3 y 4 de esta Norma Oficial Mexicana no están contempladas en los análisis a realizar para la determinación de las características CRIT de peligrosidad en los residuos.</p>
+<p>1.2 El Anexo 1 de esta Norma Oficial Mexicana contiene las bases para listar residuos peligrosos por “Fuente Específica” y “Fuente No Específica”, en función de sus Toxicidades ambiental, aguda o crónica.</p></li>
+<li><p>Si el residuo no se encuentra en ninguno de los Listados 1 a 5 y es regulado por alguno de los criterios contemplados en los numerales 6.3.1 a 6.3.4 de esta Norma, éste se sujetará a lo dispuesto en el Instrumento Regulatorio correspondiente.</p>
+<p>2.1 Los lodos y biosólidos están regulados por la NOM-004-SEMARNAT-2002.</p>
+<p>2.2 Los bifenilos policlorados (BPC’s) están sujetos a las disposiciones establecidas en la NOM-133-SEMARNAT-2000.</p>
+<p>2.3 Los límites máximos permisibles de hidrocarburos en suelos están sujetos a lo definido en la NOM-138-SEMARNAT/SS-2003.</p>
+<p>2.4 Los jales mineros se rigen bajo las especificaciones incluidas en la NOM-141-SEMARNAT-2003.</p></li>
+<li><p>Si el residuo no está listado o no cumple con las particularidades establecidas en el inciso 6.3 de la Norma referida se deberá definir si es que éste presenta alguna de las características de peligrosidad que se mencionan en el numeral 7 de la Norma Oficial Mexicana. Esta determinación se llevará a cabo mediante alguna de las opciones que se mencionan a continuación:</p>
+<p>3.1 Caracterización o análisis CRIT de los residuos junto con la determinación de las características de Explosividad y Biológico-Infeccioso.</p>
+<p>3.2 Manifestación basada en el conocimiento científico o la evidencia empírica sobre los materiales y procesos empleados en la generación del residuo en los siguientes casos: 1) Si el generador sabe que su residuo tiene alguna de las características de peligrosidad establecidas en esta norma. 2) Si el generador conoce que el residuo contiene un constituyente tóxico que lo hace peligroso. 3) Si el generador declara, bajo protesta de decir verdad, que su residuo no es peligroso.</p></li>
+</ol>
+<h2 id="anexo-ii.-caracteristicas-que-definen-a-un-residuo-como-peligroso">Anexo II. Características que definen a un residuo como peligroso</h2>
+<ol style="list-style-type: decimal">
+<li><p>Un residuo es peligroso si presenta al menos una de las siguientes características, bajo las condiciones señaladas en los numerales 7.2 a 7.7 de la <a href="http://dof.gob.mx/nota_detalle.php?codigo=4912592&amp;fecha=23/06/2006" target="_blank">Norma Oficial Mexicana NOM-052-SEMARNAT-2005</a>:<br />
+• Corrosividad<br />
+• Reactividad<br />
+• Explosividad<br />
+• Toxicidad Ambiental<br />
+• Inflamabilidad<br />
+• Biológico-Infecciosa</p>
+<p>1.1 Las Toxicidades aguda y crónica quedan exceptuadas de los análisis a realizar para la determinación de la característica de Toxicidad Ambiental en los residuos establecida en el numeral 7.5 de esta Norma Oficial Mexicana.</p></li>
+<li><p>Es Corrosivo cuando una muestra representativa presenta cualquiera de las siguientes propiedades:</p>
+<p>2.1 Es un líquido acuoso y presenta un pH menor o igual a 2.0 o mayor o igual a 12.5 de conformidad con el procedimiento que se establece en la Norma Mexicana correspondiente.</p>
+<p>2.2 Es un sólido que cuando se mezcla con agua destilada presenta un pH menor o igual a 2.0 o mayor o igual a 12.5 según el procedimiento que se establece en la Norma Mexicana correspondiente.</p>
+<p>2.3 Es un líquido no acuoso capaz de corroer el acero al carbón, tipo SAE 1020, a una velocidad de 6.35 milímetros o más por año a una temperatura de 328 K (55°C), según el procedimiento que se establece en la Norma Mexicana correspondiente.</p></li>
+<li><p>Es Reactivo cuando una muestra representativa presenta cualquiera de las siguientes propiedades:</p>
+<p>3.1 Es un líquido o sólido que después de ponerse en contacto con el aire se inflama en un tiempo menor a cinco minutos sin que exista una fuente externa de ignición, según el procedimiento que se establece en la Norma Mexicana correspondiente.</p>
+<p>3.2 Cuando se pone en contacto con agua reacciona espontáneamente y genera gases inflamables en una cantidad mayor de 1 litro por kilogramo del residuo por hora, según el procedimiento que se establece en la Norma Mexicana correspondiente.</p>
+<p>3.3 Es un residuo que en contacto con el aire y sin una fuente de energía suplementaria genera calor, según el procedimiento que se establece en la Norma Mexicana correspondiente.</p>
+<p>3.4 Posee en su constitución cianuros o sulfuros liberables, que cuando se expone a condiciones ácidas genera gases en cantidades mayores a 250 mg de ácido cianhídrico por kg de residuo o 500 mg de ácido sulfhídrico por kg de residuo, según el procedimiento que se establece en la Norma Mexicana correspondiente.</p></li>
+<li><p>Es Explosivo cuando es capaz de producir una reacción o descomposición detonante o explosiva solo o en presencia de una fuente de energía o si es calentado bajo confinamiento. Esta característica no debe determinarse mediante análisis de laboratorio, por lo que la identificación de esta característica debe estar basada en el conocimiento del origen o composición del residuo.</p></li>
+<li><p>Es Tóxico Ambiental cuando:</p>
+<p>5.1 El extracto PECT, obtenido mediante el procedimiento establecido en la NOM-053-SEMARNAT-1993, contiene cualquiera de los constituyentes tóxicos listados en la Tabla 2 de esta Norma en una concentración mayor a los límites ahí señalados, la cual deberá obtenerse según los procedimientos que se establecen en las Normas Mexicanas correspondientes.</p></li>
+<li><p>Es Inflamable cuando una muestra representativa presenta cualquiera de las siguientes propiedades:</p>
+<p>6.1 Es un líquido o una mezcla de líquidos que contienen sólidos en solución o suspensión que tiene un punto de inflamación inferior a 60.5°C, medido en copa cerrada, de conformidad con el procedimiento que se establece en la Norma Mexicana correspondiente, quedando excluidas las soluciones acuosas que contengan un porcentaje de alcohol, en volumen, menor a 24%.</p>
+<p>6.2 No es líquido y es capaz de provocar fuego por fricción, absorción de humedad o cambios químicos espontáneos a 25°C, según el procedimiento que se establece en la Norma Mexicana correspondiente.</p>
+<p>6.3 Es un gas que, a 20°C y una presión de 101.3 kPa, arde cuando se encuentra en una mezcla del 13% o menos por volumen de aire, o tiene un rango de inflamabilidad con aire de cuando menos 12% sin importar el límite inferior de inflamabilidad.</p>
+<p>6.4 Es un gas oxidante que puede causar o contribuir más que el aire, a la combustión de otro material.</p></li>
+<li><p>Es Biológico-Infeccioso de conformidad con lo que se establece en la NOM-087-SEMARNAT-SSA1-2002, referida en el punto 4 de esta Norma.</p></li>
+</ol>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
