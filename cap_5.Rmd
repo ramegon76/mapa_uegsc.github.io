@@ -1,5 +1,5 @@
 ---
-title: "Mapa Digital"
+title: "Mapa Interactivo"
 --- 
 
 ```{r setup, include=FALSE}

@@ -1,10 +1,12 @@
-[0mMicrosoft Windows [Versión 10.0.17134.590][0K[?25l
+[0m[0KMicrosoft Windows [Versión 10.0.17134.590][0K[?25l
 (c) 2018 Microsoft Corporation. Todos los derechos reservados.[0K
 [0K
-D:\Geografía\mapa_uegsc.github.io>[0K[?25hg[0Ki[0Kt[0K[39G[?25lD:\Geografía\mapa_uegsc.github.io>git a[0K[?25hd[0Kd[0K[43G[?25lD:\Geografía\mapa_uegsc.github.io>git add .[0K[?25h]0;  - git  add .[?25l
+D:\Geografía\mapa_uegsc.github.io>[0K[?25hg[0Ki[0Kt[0K[?25lD:\Geografía\mapa_uegsc.github.io>gi[0K[?25ht[0K[39G[?25lD:\Geografía\mapa_uegsc.github.io>git a[0K[?25hd[0Kd[0K[43G[?25lD:\Geografía\mapa_uegsc.github.io>git add .[0K[?25h]0;  - git  add .[?25l
+[0K[?25hwarning: LF will be replaced by CRLF in .Rhistory.[0K[?25l
+The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/pcs/files-pane.pper.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/pcs/source-pane.pper.[0K[?25l
+warning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/pcs/source-pane.pper.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/pcs/windowlayoutstate.pper.[0K[?25l
 The file will have its original line endings in your working directory[0K
@@ -12,9 +14,7 @@ The file will have its original line endings in your working directory[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/rmd-outputs.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/prop/30978EE8.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/prop/328E01A0.[0K[?25l
+warning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/prop/30978EE8.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/prop/44E6223E.[0K[?25l
 The file will have its original line endings in your working directory[0K
@@ -26,43 +26,17 @@ The file will have its original line endings in your working directory[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/prop/FB740D21.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/prop/INDEX.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-D1A21FC0/10BB9018.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-D1A21FC0/10BB9018-contents.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-D1A21FC0/3B8A74F1.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-D1A21FC0/3B8A74F1-contents.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-D1A21FC0/4D5D1E5F.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-D1A21FC0/4D5D1E5F-contents.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-D1A21FC0/946B88F9.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-D1A21FC0/946B88F9-contents.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-D1A21FC0/AD7D4241.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-D1A21FC0/AD7D4241-contents.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-D1A21FC0/C2CC6343.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-D1A21FC0/C2CC6343-contents.[0K[?25l
-The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-D1A21FC0/DE361F45.[0K[?25l
+warning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/prop/INDEX.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/shared/notebooks/paths.[0K[?25l
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/HomeButton-0.0.1/LICENSE.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/HomeButton-0.0.1/easy-button-src.min.js.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/HomeButton-0.0.1/easy-button-src.min.js.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/HomeButton-0.0.1/home-button.css.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/HomeButton-0.0.1/home-button.js.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/HomeButton-0.0.1/home-button.js.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/Proj4Leaflet-1.0.1/proj4-compressed.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
@@ -90,7 +64,7 @@ The file will have its original line endings in your working directory[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/bootstrap-3.3.5/css/readable.min.css.[0K[?25l
 The file will have its original line endings in your working directory[0K
-warning: LF will be replaced by CRLF in site_libs/bootstrap-3.3.5/css/sandstone.min.css.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in site_libs/bootstrap-3.3.5/css/sandstone.min.css.[0K[?25l
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/bootstrap-3.3.5/css/simplex.min.css.[0K[?25l
 The file will have its original line endings in your working directory[0K
@@ -110,11 +84,11 @@ The file will have its original line endings in your working directory[0K
 The file will have its original line endings in your working directory[0K
 warning: LF will be replaced by CRLF in site_libs/bootstrap-3.3.5/shim/html5shiv.min.js.[0K
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/bootstrap-3.3.5/shim/respond.min.js.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/bootstrap-3.3.5/shim/respond.min.js.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/fontawesome-4.7.0/bootstrap-theme.min.css.[0K[?25l
 The file will have its original line endings in your working directory[0K
-warning: LF will be replaced by CRLF in site_libs/fontawesome-4.7.0/bootstrap.min.css.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in site_libs/fontawesome-4.7.0/bootstrap.min.css.[0K[?25l
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/fontawesome-4.7.0/bootstrap.min.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
@@ -130,21 +104,21 @@ The file will have its original line endings in your working directory[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/fontawesome-4.7.0/leaflet.awesome-markers.css.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/fontawesome-4.7.0/leaflet.awesome-markers.js.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/fontawesome-4.7.0/leaflet.awesome-markers.js.[0K
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/fontawesome-4.7.0/leaflet.awesome-markers.min.js.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/fontawesome-4.7.0/leaflet.awesome-markers.min.js.[0K
 The file will have its original line endings in your working directory[0K
-warning: LF will be replaced by CRLF in site_libs/htmlwidgets-1.3/htmlwidgets.js.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in site_libs/htmlwidgets-1.3/htmlwidgets.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/jquery-1.11.3/jquery.min.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/jquery-1.12.4/jquery.min.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/jqueryui-1.11.4/README.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/jqueryui-1.11.4/README.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/jqueryui-1.11.4/index.html.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/jqueryui-1.11.4/jquery-ui.css.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/jqueryui-1.11.4/jquery-ui.css.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/jqueryui-1.11.4/jquery-ui.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
@@ -154,7 +128,7 @@ The file will have its original line endings in your working directory[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/jqueryui-1.11.4/jquery-ui.structure.css.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/jqueryui-1.11.4/jquery-ui.structure.min.css.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/jqueryui-1.11.4/jquery-ui.structure.min.css.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/jqueryui-1.11.4/jquery-ui.theme.css.[0K[?25l
 The file will have its original line endings in your working directory[0K
@@ -162,7 +136,7 @@ The file will have its original line endings in your working directory[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/leaflet-1.3.1/leaflet.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
-warning: LF will be replaced by CRLF in site_libs/leaflet-binding-2.0.2/leaflet.js.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in site_libs/leaflet-binding-2.0.2/leaflet.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/leaflet-easybutton-1.3.1/EasyButton-binding.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
@@ -170,19 +144,19 @@ The file will have its original line endings in your working directory[0K
 The file will have its original line endings in your working directory[0K
 warning: LF will be replaced by CRLF in site_libs/leaflet-easybutton-1.3.1/easy-button.css.[0K
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/leaflet-easybutton-1.3.1/easy-button.js.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/leaflet-easybutton-1.3.1/easy-button.js.[0K
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/leaflet-markercluster-1.0.5/MIT-LICENCE.txt.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/leaflet-markercluster-1.0.5/MIT-LICENCE.txt.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/leaflet-markercluster-1.0.5/MarkerCluster.Default.css.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/leaflet-markercluster-1.0.5/MarkerCluster.css.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/leaflet-markercluster-1.0.5/MarkerCluster.css.[0K
 The file will have its original line endings in your working directory[0K
-warning: LF will be replaced by CRLF in site_libs/leaflet-markercluster-1.0.5/leaflet.markercluster.freezable.js.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in site_libs/leaflet-markercluster-1.0.5/leaflet.markercluster.freezable.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/leaflet-markercluster-1.0.5/leaflet.markercluster.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport.js.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport.js.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/leaflet-markercluster-1.0.5/package.json.[0K[?25l
 The file will have its original line endings in your working directory[0K
@@ -192,22 +166,54 @@ The file will have its original line endings in your working directory[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/leafletfix-1.0.0/leafletfix.css.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.css.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.css.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/navigation-1.1/codefolding.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/navigation-1.1/sourceembed.js.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/navigation-1.1/sourceembed.js.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/navigation-1.1/tabsets.js.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css.[0K
 The file will have its original line endings in your working directory[0K
 [0K[?25hwarning: LF will be replaced by CRLF in site_libs/tocify-1.9.1/jquery.tocify.css.[0K[?25l
 The file will have its original line endings in your working directory[0K
-[0K[?25hwarning: LF will be replaced by CRLF in site_libs/tocify-1.9.1/jquery.tocify.js.[0K[?25l
+warning: LF will be replaced by CRLF in site_libs/tocify-1.9.1/jquery.tocify.js.[0K
+The file will have its original line endings in your working directory[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/build_options.[0K[?25l
+The file will have its original line endings in your working directory[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/prop/5A07C1A0.[0K[?25l
+The file will have its original line endings in your working directory[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/prop/71ED2432.[0K[?25l
+The file will have its original line endings in your working directory[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-102FAAB5/10BB9018.[0K[?25l
+The file will have its original line endings in your working directory[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-102FAAB5/10BB9018-contents.[0K[?25l
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-102FAAB5/3B8A74F1.[0K
+The file will have its original line endings in your working directory[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-102FAAB5/3B8A74F1-contents.[0K[?25l
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-102FAAB5/4D5D1E5F.[0K
+The file will have its original line endings in your working directory[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-102FAAB5/4D5D1E5F-contents.[0K[?25l
+The file will have its original line endings in your working directory[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-102FAAB5/946B88F9.[0K[?25l
+The file will have its original line endings in your working directory[0K
+warning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-102FAAB5/946B88F9-contents.[0K
+The file will have its original line endings in your working directory[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-102FAAB5/AD7D4241.[0K[?25l
+The file will have its original line endings in your working directory[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-102FAAB5/AD7D4241-contents.[0K[?25l
+The file will have its original line endings in your working directory[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-102FAAB5/C2CC6343.[0K[?25l
+The file will have its original line endings in your working directory[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/5B07BBA1/sources/s-102FAAB5/C2CC6343-contents.[0K[?25l
 The file will have its original line endings in your working directory[0K
 [0K[?25h]0; [?25l
-D:\Geografía\mapa_uegsc.github.io>[0K[?25hG[0Ki[0Kt[0K[?25lD:\Geografía\mapa_uegsc.github.io>Gi[0K[?25h[?25lD:\Geografía\mapa_uegsc.github.io>G[0K[?25h[?25lD:\Geografía\mapa_uegsc.github.io>[0K[?25hg[0Ki[0Kt[0K[39G[?25lD:\Geografía\mapa_uegsc.github.io>git a[0K[?25hd[0Kd[0K[43G[?25lD:\Geografía\mapa_uegsc.github.io>git add -[0K[?25hA[0K]0;  - git  add -A[?25l
+D:\Geografía\mapa_uegsc.github.io>[0K[?25hgit add .[0K]0;  - git  add .[?25l
+[0K[?25h]0; [?25l
+D:\Geografía\mapa_uegsc.github.io>[0K[?25hg[0Ki[0Kr[0K[?25lD:\Geografía\mapa_uegsc.github.io>gi[0K[?25ht[0K[39G[?25lD:\Geografía\mapa_uegsc.github.io>git a[0K[?25hd[0Kd[0K[43G[?25lD:\Geografía\mapa_uegsc.github.io>git add -[0K[?25hA[0K]0;  - git  add -A[?25l
 [0K[?25h

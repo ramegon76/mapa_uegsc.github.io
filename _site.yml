@@ -11,7 +11,7 @@ navbar:
     href: cap_3.html
   - text: "Aspectos Metodológicos"
     href: cap_4.html
-  - text: "Mapa Digital"
+  - text: "Mapa Interactivo"
     href: cap_5.html
 output:
   html_document:
@@ -21,3 +21,4 @@ output:
     highlight: kate
     lib_dir: site_libs
     self_contained: no
+    
